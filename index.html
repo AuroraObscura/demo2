@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Русский Транспортный Комплекс</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #F6F7F9;
+      color: #1C1C1C;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1531834685032-c34bf0d3a4f6') center/cover no-repeat;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 48px;
+      font-weight: 700;
+    }
+    header p {
+      font-size: 20px;
+      margin: 20px 0;
+    }
+    .cta-buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      background-color: #FF3C3C;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .services, .advantages, .reviews {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      flex: 1 1 30%;
+    }
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    footer {
+      background: #003D8F;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    input, textarea {
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      padding: 12px;
+      background-color: #FF3C3C;
+      color: white;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Логистика и ВЭД без головной боли</h1>
+    <p>Доставка, таможня и внешнеэкономическая деятельность — в одном окне</p>
+    <div class="cta-buttons">
+      <a href="#form">Рассчитать доставку</a>
+      <a href="#form">Получить консультацию</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Что мы делаем?</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Таможенное оформление</h3>
+        <p>18 минут, любой тип груза</p>
+      </div>
+      <div class="card">
+        <h3>Международные перевозки</h3>
+        <p>Быстрее конкурентов, по всему миру</p>
+      </div>
+      <div class="card">
+        <h3>ВЭД под ключ</h3>
+        <p>Оформление, расчёты, логистика — всё берём на себя</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Почему выбирают нас?</h2>
+    <div class="advantages">
+      <div class="card">
+        <h3>98%</h3>
+        <p>Грузов доставлены в срок</p>
+      </div>
+      <div class="card">
+        <h3>84%</h3>
+        <p>Клиентов возвращаются</p>
+      </div>
+      <div class="card">
+        <h3>1%</h3>
+        <p>Поставок — с трудностями</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Что говорят клиенты?</h2>
+    <div class="reviews">
+      <div class="card">
+        <p>"Работаем с РТК уже 3 года, всегда чётко и вовремя. Надёжные партнёры."</p>
+      </div>
+      <div class="card">
+        <p>"Помогли завезти оборудование из Китая без задержек и штрафов."</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <h2 id="form">Свяжитесь с нами</h2>
+    <form>
+      <input type="text" placeholder="Ваше имя" required />
+      <input type="tel" placeholder="Телефон" required />
+      <textarea placeholder="Вопрос / описание груза"></textarea>
+      <button type="submit">Отправить</button>
+    </form>
+  </footer>
+</body>
+</html>
